@@ -62,7 +62,7 @@ void terminal_app()
         std::vector<std::string> vs_input = cmd2vec(userinput);
         
         if(vs_input[0] == "exit"){
-            break;
+            exit(1);
         }
 
         std::vector<char *> vc_input = castArgs(vs_input);

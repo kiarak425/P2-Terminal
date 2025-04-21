@@ -4,7 +4,7 @@ std::vector<char *> castArgs(const std::vector<std::string> &cmd)
 {
     //Used a format from the lecture slides
     std::vector<char*> char_vector;
-    for (const std::string value : cmd) {
+    for (const std::string& value : cmd) {
         char_vector.push_back(const_cast<char*>(value.c_str()));
     }
     char_vector.push_back(nullptr); // null-terminate
