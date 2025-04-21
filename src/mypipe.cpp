@@ -31,7 +31,7 @@ std::string mypipe::read()
     //From lecture slide 76
     std::array<char, 256> temp;
     std::size_t filesize;
-    filesize = ::read(fd[0], temp.date(), temp.size());
+    filesize = ::read(fd[0], temp.data(), temp.size());
     if(filesize > 0){
         return std::string{temp.data(), filesize};
     }
