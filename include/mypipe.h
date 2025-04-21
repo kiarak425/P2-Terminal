@@ -11,7 +11,7 @@ class mypipe {
     private:
      // File descriptors for the pipe
      // fd[0] is the read end of the pipe, fd[1] is the write end
-     std::array<int, 2> fd;
+     std::array<int*, 2> fd;
 
    public:
      // Constructor: Creates a unidirectional pipe using pipe().
