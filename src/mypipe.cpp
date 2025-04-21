@@ -1,4 +1,4 @@
-#include "include/mypipe.h"
+#include "mypipe.h"
 #include <unistd.h>
 #include <sys/wait.h>
 

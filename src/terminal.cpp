@@ -1,6 +1,6 @@
 #include "terminal.h"
 #include <iostream>
-#include <mypipe.h>
+#include "mypipe.h"
 #include <process.h>
 #include "utility.h"
 #include <unistd.h>
