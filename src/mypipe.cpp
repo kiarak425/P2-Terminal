@@ -5,7 +5,7 @@
 mypipe::mypipe()
 {
     //From lecture slide 74
-    auto status = {pipe(fd.data())};
+    int status = {pipe(fd.data())};
     if(status < 0){
         exit(1);
     }
