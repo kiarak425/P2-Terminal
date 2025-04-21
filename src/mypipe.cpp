@@ -1,11 +1,14 @@
 #include "mypipe.h"
 #include <unistd.h>
+#include <string>
+#include <iostream>
+#include <array>
 #include <sys/wait.h>
 
 mypipe::mypipe()
 {
     //From lecture slide 74
-    int status = {pipe(fd.data())};
+    auto status{pipe(fd)};
     if(status < 0){
         exit(1);
     }
