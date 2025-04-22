@@ -15,6 +15,9 @@ std::vector<std::string> cmd2vec(const std::string &command, char delimiter)
 {
     std::vector<std::string> string_vector;
     std::string temp;
+    if(string_vector.empty()){
+        return string_vector;
+    }
     for (const char& value : command) {
         if(value == delimiter){
             string_vector.push_back(temp);
